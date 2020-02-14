@@ -1,0 +1,48 @@
+h1 {
+    font-size: 27px;
+    font-family: Tahoma;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #98A886;
+}
+
+nav {
+    background-color: #98A886;
+    padding-top: 80 px;
+    font-family: Tahoma;
+    color: white;
+}
+
+p {
+    padding-right: 10px;
+	padding-left: 10px;
+	font-family: 'Comic Sans';
+	size: 10px;
+}
+
+
+
+body {
+    background-color: #465C69;
+}
+
+section {
+    background-color: bisque;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+aside {
+    background-color: aqua;
+    float: right;
+    height: 100px;
+    width: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
