@@ -11,16 +11,16 @@ header {
 
 nav {
     background-color: #98A886;
-    padding-top: 80 px;
+    padding: 8px;
     font-family: Tahoma;
-    color: white;
+    font-size-adjust: auto;
 }
 
 p {
     padding-right: 10px;
 	padding-left: 10px;
-	font-family: 'Comic Sans';
-	size: 10px;
+	font-family: Tahoma;
+	font-size: 15px;
 }
 
 
@@ -32,17 +32,33 @@ body {
 section {
     background-color: bisque;
     float: left;
+    width: 75%;
     margin-bottom: 20px;
     margin-top: 10px;
-    margin-left: 10px;
 }
 
 aside {
-    background-color: aqua;
+    background-color: #AECFE5;
     float: right;
-    height: 100px;
-    width: 40px;
+    width: 24%;
     margin-bottom: 20px;
     margin-top: 10px;
-    margin-left: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: left;
+    font-family: Tahoma;
+    color: dimgray;
+    text-align: center;
+}
+
+img {
+    width: 80%;
+    align-content: center;
+    height: 80%;
+}
+
+h4 {
+    font-family: Tahoma;
 }
