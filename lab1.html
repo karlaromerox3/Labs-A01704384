@@ -10,46 +10,177 @@
 
     <header>
         <h1>Lab 1. Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información</h1>
-    </header> 
-    
-    <nav>            
-            <a href="#yo"> Sobre mí </a> |
-            <a href=""> Proyectos Personales</a> |
-            <a href=""> Mis pasiones</a> |
-            <a href=""> Preguntas</a>
+    </header>
+
+    <nav>
+        <a href="#soy"> Quien soy </a> |
+        <a href="#aficiones"> Aficiones</a> |
+        <a href="#proyectos">Principales Proyectos</a> |
+        <a href="#preguntas"> Preguntas</a>
     </nav>
-    
+
     <section>
-        <h2><a id = 'yo'>Sobre Mi</h2></a>
+        <h2>Sobre Mi</h2>
         <article>
-            <h4>Quien soy</h4>
-            <p> Mi nombre es Karla Daniela Romero Pérez, tengo 19 años, y nací el 2 de Abril en un pueblo llamado Aculco, en el Estado de México. Desde niña </p>
-        
+            <h4><a id='soy'>Quien soy</a></h4>
+            <p> Mi nombre es Karla Daniela Romero Pérez, tengo 19 años, y nací el 2 de Abril en un pueblo llamado Aculco, en el Estado de México. Viví ahí durante 15 años y después me mudé a San Juan del Río, pero hoy en día vivo en Querétaro.</p>
+
         </article>
-        
+
         <article>
-            <h4>Aficiones</h4>
-            <p> Mi nombre es Karla Daniela Romero Pérez, tengo 19 años, y nací el 2 de Abril en un pueblo llamado Aculco, en el Estado de México. Desde niña </p>
-        
+            <h4><a id='aficiones'>Aficiones</a></h4>
+            <p> Cuando no estoy tan ocupada con la escuela veo series, algunas de mis favoritas son The Good Place y Brooklyn 99. Además escucho música y me gusta cantar, y aunque me han dicho que soy buena, sigo aprendiendo.</p>
+
         </article>
-        
+
         <article>
-            <h4>Principales proyectos</h4>
-            <p> Mi nombre es Karla Daniela Romero Pérez, tengo 19 años, y nací el 2 de Abril en un pueblo llamado Aculco, en el Estado de México. Desde niña </p>
-        
+            <h4><a id='proyectos'>Principales proyectos</a></h4>
+            <p> Desde que conozco la programación he participado en proyectos de desarrollo de paginas web simples, bases de datos muy pequeñas y una o dos apps usando XCode, principalmente para ayudar a mis papás en sus tareas diarias y hacer más fácil su trabajo. </p>
+
         </article>
-    
+
     </section>
-    
     <aside>
         <h2>Información de contacto</h2>
         <img src="me.jpeg" alt="Karla Romero">
-        <p>Karla Daniela Romero Pérez <br/> 
-           ISC A01704384<br/>
-           Correo personal kdaniela6@gmail.com
+        <p>Karla Daniela Romero Pérez <br />
+            ISC A01704384<br />
+            Correo personal kdaniela6@gmail.com
         </p>
+
+        <h2>Contactame!</h2>
+
+        <form>
+            Tu nombre:&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="e.g. Karla" />
+            <br />
+            Tu correo: &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" placeholder="e.g. clasedaw@itesm.com" />
+            <br />
+            Teléfono:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="e.g. 7121433422"/>
+            <br />
+            <br />
+            <button type="submit" name="submit" id="submit">Enviar</button>
+        </form>
+
+
     </aside>
 
-</body>
+    <section>
+        <h2>Preguntas</h2>
+        <article>
+            <details>
+                <summary>¿Cuál es la diferencia entre Internet y la World Wide Web?</summary>
+
+                <p>Internet se refiere a una red de redes, que está distribuida por todo el mundo. Es la interconexión de redes de computadoras, servidores y dispositivos que tienen posibilidad de ser parte de una red de computación.
+                    Por otro lado, la World Wide Web es un sistema para acceder a dispositivos conectados en Internet. Se puede acceder a ella por medio de buscadores de internet y utiliza HTTP para acceder y mostrar distinta información.
+                    De esta manera puede decirse que el Internet es el hardware de miles de dispositivos conectados y la WWW es uno de los sistemas que nos permiten acceder al contenido que ofrece el internet. [1]</p>
+            </details>
+
+            <details>
+                <summary>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</summary>
+
+                <ul>
+                    <li>GET: Pide recursos desde un servidor web, segun una condicion o rango determinado, la petición viaja en el encabezado del mensaje y sin cifrar.
+                    </li>
+                    <li>HEAD: Recupera información sobre algun recurso, pero no el recurso en sí. Es mucho más rápido que el GET ya que pasa menos información y es usado para ver cuando se modificó por última vez y determinar si es factible usar una copia local o no. [2]</li>
+                    <li>POST: Envía datos al servicio web, como recursos o información de un nuevo registro en una base de datos. La información viaja en el cuerpo del mensaje, por lo que es más segura.</li>
+                    <li>PUT: Reemplaza recursos en el servidor, si no existe previamente, funciona como un POST.</li>
+                    <li>PATCH: Permite actualizar o hacer cambios en alguna parte del recurso pero no en todo, esto con la finalidad de no tener que subir todo el archivo y usar un exceso de banda ancha. [3]</li>
+                    <li>DELETE: Elimina recursos o registros que están en el servidor. [4]</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</summary>
+
+                <p>POST ya que hace que el mensaje en el cuerpo del paquete y es más dificil de interpretar, porque no va en texto plano.</p>
+            </details>
+
+            <details>
+                <summary>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</summary>
+
+                <p>GET, porque descarga todo el recurso y lo muestra en pantalla</p>
+            </details>
+
+            <details>
+                <summary>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</summary>
+
+                <p>Los errores que empiezan con 2XX son referentes al éxito del método enviado. Más especificamente una respuesta con el código 200 significa que todo fue como se esperaba, la comunicación y el procesamiento fueron exitosos. [5]</p>
+            </details>
+
+
+            <details>
+                <summary>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</summary>
+
+                <p>Los códigos 4XX significan errores del cliente en la solicitud al servidor. Un error 404 quiere decir que no se encontró el recurso que se solicitaba y que el servidor no sabe si alguna vez existió. La responsabilidad de repararlo es del desarrollador, pues quiere decir que los GET no están bien creados o el enlace está mal.[5]</p>
+            </details>
+
+            <details>
+                <summary>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</summary>
+
+                <p>Los códigos que tienen formato 5XX hablan de errores en el servidor, quien pudo aceptar la solicitud pero por algún error interno no pudo contestar. El estado 500 quiere decir "error interno en el servidor". Este caso no es responsabilidad del desarrollador, si no del administrador del servidor ya que puso un programa que estaba mal.[5]</p>
+            </details>
+
+            <details>
+                <summary>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</summary>
+
+                <p>Que la W3C no se recomienda su uso en HTML5 porque hay alternativas mucho más flexibles y fáciles de usar con hojas de estilo de CSS. Los tags siguen siendo compatibles con los buscadores pero poco a poco van a ir desapareciendo.
+                    Algunos de los tags depreciados son los de estilo, como font, center, u,s, entre otros y algunos atributos son: align, background, bgcolor, border, link, etc.[6]</p>
+            </details>
+
+            <details>
+                <summary>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</summary>
+
+                <p>En términos generales, HTML5 simplfica muchos tags, tiene mejor manejo de errores, soporte para multimedia, tags para canvas,video y audio, separa el estilo del contenido, además de que soporta drag and drop de archivos sin necesidad de ninguna extensión. [7]</p>
+            </details>
+
+            <details>
+                <summary>¿Qué componentes de estructura y estilo tiene una tabla?</summary>
+
+                <p>Componentes de estructura: row, data, header, colspan, rowspan
+                    Componentes de estilo: border, background, color, text align[8]</p>
+            </details>
+
+
+            <details>
+                <summary>¿Cuáles son los principales controles de una forma HTML5?</summary>
+
+                <p>Cajas de texto, cajas de texto para contraseñas, botones de elección, cajas de selección, botones genéricos. [9]</p>
+            </details>
+
+            <details>
+                <summary>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? </summary>
+
+                <p>Usando Chrome 80 en Windows 10, tengo un total de 476/555 puntos, eso es 85.7% de soporte. [10]</p>
+            </details>
+
+            <details>
+                <summary>Sobre el ciclo de vida y desarrollo de los sistemas de información: <br />
+                    ¿Cuál es el ciclo de vida de los sistemas de información? </summary>
+
+                <p>Planificación, análisis, diseño, implementación, pruebas, instalación, uso y mantenimiento[11]</p>
+            </details>
+
+            <details>
+                <summary>¿Cuál es el ciclo de desarrollo de sistemas de información?</summary>
+
+                <p>[12]</p>
+            </details>
+
+
+
+        </article>
+    </section>
+
+
+    <footer>
+        <h3>Creado por Karla Romero usando <a href="http://brackets.io/">Brackets</a></h3>
+        <h3>Febrero 2020, ITESM Campus QRO</h3>
+    </footer>
+
+
+    </body>
 
 </html>
