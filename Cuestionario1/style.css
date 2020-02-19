@@ -1,0 +1,76 @@
+
+body {
+    background-color: #38618C;
+}
+
+header {
+    background-color: #35A7FF;
+    text-align: center;
+    overflow: hidden;
+    padding: 3px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Tahoma;
+    color: white;
+}
+
+.page {
+    align-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px)  {
+  .page {
+  width: 960px;
+  margin: 0 auto;
+ }
+}
+
+section {
+    background-color: #FF5964;
+}
+
+h2 {
+    font-family: Tahoma;
+    font-size: 18px;
+    padding-left: 10px;
+    color: white;
+}
+
+.izq {
+    float: left;
+    width: 49%;
+    margin-top: 2%;
+}
+
+p {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+    
+}
+
+.der {
+    float:right;
+    width: 49%;
+    margin-top: 2%;
+}
+
+ul {
+    color: white;
+    
+}
+
+summary {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    padding-right: 5px;
+}
+
+
