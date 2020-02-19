@@ -32,6 +32,7 @@ h1 {
 
 section {
     background-color: #FF5964;
+    
 }
 
 h2 {
@@ -74,3 +75,17 @@ summary {
 }
 
 
+
+footer {
+    margin-top: 20px;
+    width: 960px;
+    margin-left: 21.5%;
+    text-align: center;
+    background-color: #FFE74C;
+    clear: both;
+}
+
+h3 {
+    font-family: Tahoma;
+    font-size: 19px;
+}
