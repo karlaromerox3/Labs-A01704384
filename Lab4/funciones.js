@@ -1,12 +1,53 @@
 function uno() {
     let n = prompt("Dame un número");
+    let cuad= new Array(n);
+    let cub = new Array(n);
     for (let i=1; i<=n; i++){
-    document.write(Math.pow(i,2)+", ");
+    cuad[i]=Math.pow(i,2);
     }
     
     for (let i=1; i<=n; i++){
-    document.write(Math.pow(i,3)+", ");
+    cub[i]=Math.pow(i,3);
     }
+  
+    var article = document.getElementsByTagName("article")[0];
+ 
+  
+    var tabla   = document.createElement("table");
+    var tblBody = document.createElement("tbody");
+ 
+  
+    for (var i = 0; i <=1; i++) {
+        var column = document.createElement("tr");
+ 
+        for (var j = 0; j <= n; j++) {
+   
+            var celda = document.createElement("td");
+            
+            if(j==0 && i==0){
+                var textoCelda = document.createTextNode("Cuadrados");
+            }else if(j==0 && i==1){
+                var textoCelda = document.createTextNode("Cubos");
+            }else{
+                if(i==0){
+                    var textoCelda = document.createTextNode(cuad[j]);
+                }else{
+                   var textoCelda = document.createTextNode(cub[j]); 
+                }
+            }
+            
+            celda.appendChild(textoCelda);
+            column.appendChild(celda);
+        
+        }
+        tblBody.appendChild(column);
+    }
+ 
+  
+    tabla.appendChild(tblBody);
+    article.appendChild(tabla);
+  
+tabla.setAttribute("border", "1");
     
 }
 

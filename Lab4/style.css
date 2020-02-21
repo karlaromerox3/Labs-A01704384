@@ -42,6 +42,15 @@ h1 {
     color: white;
 }
 
+table {
+    margin-left: 20px;
+    border: white 5px solid;
+    font-size: 15px;
+    font-family: Tahoma;
+    color: white;
+    border-color: white;
+}
+
 .page {
     margin: auto;
     width: 1000px;
@@ -49,9 +58,12 @@ h1 {
 
 
 section {
-    width: 960px;
-    float: center;
     background-color: #FF5964;
+    margin-right: 500px;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 500px;
     
 }
 
@@ -118,4 +130,13 @@ div {
 
 .ref {
     width=100%;
+}
+
+article {
+    background-color: #C1C1C1;
+    margin-right: 500px;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 500px;
 }
