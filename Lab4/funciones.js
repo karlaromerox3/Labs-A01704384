@@ -86,7 +86,6 @@ function contador(arr) {
 }
 
 function promedios(mat) {
-    console.log(mat);
     let proms = [
         [0],
         [0],
@@ -112,6 +111,39 @@ function invertido(){
         n = parseInt(n/10);
     }  
     document.write("Invertido: " + inv);    
+}
+
+function problema(){
+    alert("Para este ejercicio usaré un problema de la clase de algoritmos, donde se necesitaba un programa que creara una contraseña de tamaño n y con k letras iguales. Con la restricción de que no puede haber dos letras iguales juntas.");
+    
+    let n = prompt("Numero de caracteres: ");
+    let k = prompt("Numero de letras repetidas");
+    
+    if (n<2 || n>100){
+        return 0;
+    }
+    if(k<2 || (k>n || k>26)){
+        return 0;
+    }
+
+    let letra=0;
+    let pass="";
+  
+    
+    for(let i=0; i<n; i++){
+      if(i > (k-1)){
+        letra = (parseInt((i%k))+parseInt(97));
+          console.log(letra);
+          pass = pass + String.fromCharCode(letra);
+        console.log(pass);
+      } else { 
+        letra = (parseInt((i))+parseInt(97));
+        pass = pass + String.fromCharCode(letra);
+        console.log(pass);
+      }
+    }
+    
+    alert("La contraseña sugerida es: " + pass);
 }
 
 
