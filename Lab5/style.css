@@ -1,0 +1,115 @@
+
+body {
+    background-color: #38618C;
+}
+
+header {
+    background-color: #35A7FF;
+    text-align: center;
+    overflow: hidden;
+    padding: 3px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Tahoma;
+    color: white;
+}
+
+.page {
+    align-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px)  {
+  .page {
+  width: 960px;
+  margin: 0 auto;
+ }
+}
+
+section {
+    background-color: #FF5964;
+    
+}
+
+h2 {
+    font-family: Tahoma;
+    font-size: 18px;
+    padding-left: 10px;
+    color: white;
+}
+
+.izq {
+    
+    float: left;
+    width: 49%;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+p {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+    
+}
+
+.der {
+    float: right;
+    width: 49%;
+    margin-top: 2%;
+}
+
+
+    pa
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+    
+}
+
+summary {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    padding-right: 5px;
+}
+
+
+
+footer {
+    margin-top: 20px;
+    width: 960px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    background-color: #FFE74C;
+    clear: both;
+}
+
+h3 {
+    font-family: Tahoma;
+    font-size: 19px;
+}
+
+
+
+ul {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+}
+
+#ejercicio {
+    background-color: #C1C1C1;
+    margin-right: 500px;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 500px;
+}
