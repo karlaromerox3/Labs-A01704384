@@ -164,3 +164,9 @@ form {
 input {
     
 }
+
+article {
+    background-color: darkgray;
+    display: block;
+    height: auto;
+}
