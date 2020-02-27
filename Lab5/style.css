@@ -3,7 +3,11 @@ body {
     background-color: #38618C;
 }
 
-#myButton {
+tr{
+    background-color: gray;
+}
+
+.myButton {
 	box-shadow:inset 0px 0px 15px 3px #23395e;
 	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
 	background-color:#2e466e;
@@ -19,14 +23,33 @@ body {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #263666;
 }
-#myButton:hover {
+.myButton:hover {
 	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
 	background-color:#415989;
 }
-#myButton:active {
+.myButton:active {
 	position:relative;
 	top:1px;
 }
+
+table {
+    margin: 20px;
+    border: white 2px solid ;
+    font-size: 20px;
+    font-family: Tahoma;
+    color: white;
+    border-color: white;
+}
+
+table:hover {
+    border: white 8px solid 
+}
+
+td{
+    width:15%;
+    text-align: center;
+}
+
 
 
 header {
@@ -59,7 +82,7 @@ h1 {
 section {
     background-color: #FF5964;
     display: block;
-    height: 300px;
+    padding-bottom: 10px;
     
 }
 
@@ -93,13 +116,6 @@ p {
 }
 
 
-    pa
-    font-family: Tahoma;
-    font-size: 16px;
-    color: white;
-    padding-left: 10px;
-    
-}
 
 summary {
     font-family: Tahoma;
@@ -145,9 +161,7 @@ form {
     padding-left: 10px;
 }
 
-#myButton {
-    
-}
+
 
 #pic {
   padding-top: 5px;
@@ -162,11 +176,35 @@ form {
 }
 
 input {
-    
+    font-family: Tahoma;
+    font-size: 16px;
+    padding-left: 10px;
 }
 
 article {
     background-color: darkgray;
     display: block;
     height: auto;
+}
+
+label {
+     font-family: Tahoma;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+.right {
+    float: left;
+}
+
+#derecha {
+    float: right;
+}
+
+select {
+    font-family: Tahoma;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }

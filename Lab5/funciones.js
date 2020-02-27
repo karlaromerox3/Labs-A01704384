@@ -39,3 +39,8 @@ function tienda() {
 }
 
 document.getElementById("myButton").onclick = tienda;
+
+
+
+
+
