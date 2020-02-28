@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <meta charset='UTF-8' />
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0">
+    <link rel='stylesheet' href='style.css'/>
+    <head>
+        <title>Lab 5. Programación Orientada a Eventos</title>
+    </head>
+    
+    <body onload="crearTabla()">
+        <div class='page'>
+            <header>
+                <h1>Bitacora de Trabajo</h1>
+            </header>
+            
+            <section>
+                <p></p>
+                <h2>Registra las tareas que has hecho.</h2>
+                <form>
+                    <label for="tarea"> Tarea     </label>
+                    <input type="text" id = "task" maxlength="30"  autofocus required> <br>
+                    <br>  
+                    <label for="Encargado"> Encargado     </label>
+                    <input type="text" id = "resp" maxlength="20" required> <br>
+
+                    <br>  
+                    <label for="Estado"> Estado     </label>
+                    <select id="est" required>
+                      <option value="Terminado">Terminado</option>
+                      <option value="En Proceso">En Proceso</option>
+                      <option value="Pendiente">Pendiente</option>
+                      
+                    </select>
+                    <br>  
+                    <label for="Recursos"> Recursos (link de tarea)     </label>
+                    <input type="url" id="url" required> <br>
+                    
+                    <br>  
+                    <label for="Tiempo Estimado"> Tiempo estimado (min)</label>
+                    <input type="number" id="tiest" min="3" max="200"required> <br>
+                    
+                    <br>  
+                    <label for="Tiempo Real"> Tiempo real (min)</label>
+                    <input type="number" id="treal" min="3" max="200"required> <br>
+
+                     <input type="button" class ="myButton" id="agregar" value="Agregar">
+                    
+                    <input class ="myButton" type="reset" value="Nueva Tarea">
+                </form>
+            </section>  
+            
+            <article id="article">
+                
+            </article>
+            
+        </div>
+        <footer>
+            <h3>Creado por Karla Romero (A01704384) usando <a href="http://brackets.io/">Brackets</a></h3>
+            <h3>Febrero 2020, ITESM Campus QRO</h3>
+        </footer>
+    </body>
+    <script src="logicalibre.js"></script>
+    
+</html>

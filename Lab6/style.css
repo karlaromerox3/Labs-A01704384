@@ -1,0 +1,229 @@
+
+body {
+    background-color: beige;
+}
+
+ 
+tr{
+    background-color: gray;
+}
+
+
+.myButton {
+    box-shadow:inset 0px 0px 15px 3px #23395e;
+    background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+    background-color:#2e466e;
+    border-radius:17px;
+    border:1px solid #1f2f47;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:18px;
+    padding:6px 13px;
+    margin: 13px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+    background-color:#415989;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+table {
+    margin: 20px;
+    border: white 2px solid ;
+    font-size: 20px;
+    font-family: Tahoma;
+    color: white;
+    border-color: white;
+}
+
+table:hover {
+    border: white 8px solid
+}
+
+td{
+    width:15%;
+    text-align: center;
+}
+
+
+
+header {
+    
+    z-index: 3;
+    background-color: #35A7FF;
+    text-align: center;
+    overflow: hidden;
+    padding: 3px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Tahoma;
+    color: white;
+}
+
+.page {
+    width: 960px;
+    margin: 0 auto;
+    align-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px)  {
+
+}
+
+section {
+    background-color: #FF5964;
+    display: block;
+    padding-bottom: 10px;
+
+}
+
+h2 {
+    font-family: Tahoma;
+    font-size: 18px;
+    padding-left: 10px;
+    color: white;
+}
+
+.izq {
+
+    float: left;
+    width: 49%;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+p {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+
+}
+
+.der {
+    z-index: 3;
+    float: right;
+    width: 49%;
+    margin-top: 2%;
+}
+
+
+
+summary {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    padding-right: 5px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #FFE74C;
+    clear: both;
+}
+
+h3 {
+    font-family: Tahoma;
+    font-size: 19px;
+}
+
+
+
+ul {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+}
+
+#ejercicio {
+    background-color: #C1C1C1;
+    margin-right: 500px;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 500px;
+}
+
+form {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+}
+
+
+
+#pic {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  float: left;
+  width: 30%;
+}
+
+#descrip {
+    float: right;
+}
+
+input {
+    font-family: Tahoma;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+article {
+    background-color: darkgray;
+    display: block;
+    height: auto;
+}
+
+label {
+     font-family: Tahoma;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+.right {
+    float: left;
+}
+
+#derecha {
+    float: right;
+}
+
+select {
+    font-family: Tahoma;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.watermark{
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left: 10%;
+    bottom:0px;
+    right:10%;
+    opacity:0.2;
+}
+
+#fondo {
+    width: 100%;
+}
