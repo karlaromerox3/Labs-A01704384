@@ -3,6 +3,7 @@
     <meta charset='UTF-8' />
     <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0">
     <link rel='stylesheet' href='style.css'/>
+    <script src="drag.js"></script>
     <head>
         <title>Lab 6. Documentos dinámicos con JavaScript</title>
     </head>
@@ -27,7 +28,7 @@
 
 
 
-            <section class='izq'>
+            <section class='der'>
                 <h2>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</h2>
                 <p> <strong>static </strong>Los objetos static usan el flujo hacia abajo de la página, y no tiene en cuenta los valores de top, right, bottom y left<br>
                     <strong>relative </strong>Permite posicionar con respecto al flujo normal pero si hace caso a top, right, bottom y left<br>
@@ -38,7 +39,7 @@
                     <strong>sticky </strong> Es como si usaras relative hasta que se desliza y funciona como fixed, normalmente se usa para menús.<br>
                     [1]</p>
             </section>
-            <section class='der'>
+            <section class='izq'>
                 <h2>¿Qué es el zIndex y para qué sirve?</h2>
                 <p> Indica el orden de un elemento cuando estos se superponen. Entre mayor sea el z-index, más arriba está la capa. Vale la pena mencionar que no es heredable, y solo aplica para elementos posicionados. [3]</p>
             </section>
@@ -49,7 +50,7 @@
             </section>
 
 
-            <section class='der'>
+            <section class='izq'>
                 <h2>Referencias</h2>
                 <ul>
                     <li>[1] https://es.stackoverflow.com/questions/37930/cual-es-la-diferencia-entre-position-relative-position-absolute-y-position</li>
@@ -60,10 +61,16 @@
 
             <br/><br/>
         </div>
+        
+        <section>
+        <h2>Probemos drag and drop!</h2>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <img id="drag1" src="koala.png" draggable="true" ondragstart="drag(event)" >
+        </section>
         <footer>
                 <h3>Creado por Karla Romero (A01704384) usando <a href="http://brackets.io/">Brackets</a></h3>
                 <h3>Febrero 2020, ITESM Campus QRO</h3>
             </footer>
-
+       
     </body>
 </html>

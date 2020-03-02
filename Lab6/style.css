@@ -55,8 +55,6 @@ td{
 
 
 header {
-    
-    z-index: 3;
     background-color: #35A7FF;
     text-align: center;
     overflow: hidden;
@@ -64,6 +62,8 @@ header {
 }
 
 h1 {
+    
+    padding: 5px;
     font-size: 40px;
     font-family: Tahoma;
     color: white;
@@ -84,7 +84,7 @@ h1 {
 
 section {
     background-color: #FF5964;
-    display: block;
+    
     padding-bottom: 10px;
 
 }
@@ -100,7 +100,7 @@ h2 {
 
     float: left;
     width: 49%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 2%
 }
 
@@ -226,4 +226,34 @@ select {
 
 #fondo {
     width: 100%;
+}
+
+#contr {
+    width: 70%;
+    float: left;
+}
+
+aside {
+    visibility: hidden;
+    background-color: gray;
+    float: left;
+    width: 30%;
+    
+}
+
+#restric {
+    
+}
+
+#div1 {
+float: left;
+  width: 100px;
+  height: 140px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#drag1 {
+    width: 100px;
+    height: 140px;
 }

@@ -12,17 +12,27 @@
             <header>
                 <h1>Validador de contraseñas</h1>
             </header>
-            <section>
+            <section id="contr">
                 <h2>Validador de contraseñas</h2>
                 <form name="f1" onsubmit= "comprobar()">
-                    Contraseña: <input type="password" id="con1" name="con1" size="20" required >
+                    Contraseña: <input type="password" id="con1" name="con1" size="20" onfocus="restric()" onblur="borra()" required >
                     <br>  <br> 
                     Repite contraseña: <input type="password" id="con2"  size="20" required>
                     <br>
                     <input type="submit" id ="myButton" class ="myButton" value="Enviar">
                 </form>
             </section>
+            <aside id="restric">
+                <h1>Recuerda: </h1>
+                <ul>
+                    <li>Usa caracteres especiales</li>
+                    <li>Procura usar más de 8 caracteres</li>
+                    <li>Alterna numeros y letras</li>
+                    <li>No uses caracteres en orden ascendiente o descediente</li>
+                </ul>
+            </aside>
         </div> 
+        
     <footer>
                 <h3>Creado por Karla Romero (A01704384) usando <a href="http://brackets.io/">Brackets</a></h3>
                 <h3>Febrero 2020, ITESM Campus QRO</h3>

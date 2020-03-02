@@ -8,6 +8,12 @@ function comprobar() {
     }else alert("Las contraseñas no coinciden. Verifica de nuevo.");    
 }
 
+function restric(){
+    document.getElementById("restric").style.visibility = "visible";
+}
+function borra(){document.getElementById("restric").style.visibility = "hidden";
+}
+
 function cambiarTexto(obj){
     obj.style.color="blue";
 }
@@ -55,6 +61,7 @@ function tienda() {
 }
 
 document.getElementById("myButton").onclick = tienda;
+
 
 
 
