@@ -1,0 +1,33 @@
+<nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo center">Lab 9. Introducción a php</a>
+    
+  </div>
+</nav>
+
+<div class="container ">
+  <ul class="collapsible expandable blue-grey darken-1 white-text">
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.</div>
+      <div class="collapsible-body"><span>Es una herramienta de depuración que permite ver el estado de la versión, servidor y entorno con el que opera PHP. Se usa para revisar las configuraciones de la computadoras y sus compatibilidades con distintas aplicaciones web, ya que contiene los valores Environment, GET, POST, Cookie y server. </span>
+      <blockquote>PHP Variables: Son variales de entorno que permiten que los scripts recolecten datos del servidor dinamicamente, lo cual permite mucha flexibilidad en el entorno cambiante. Por ejemplo, SITE_HTMLROOT da el path para el sitio raiz, sin tener que cambiar un script completo. <br/> Referencia: https://mediatemple.net/community/products/grid/204643130/using-environment-variables-in-php</blockquote>
+      <blockquote>Virtual Directory Support: 
+      Quiere decir que permite el uso de directorios virtuales, es decir, aquellos que no dependen del root pero que pueden ser accesibles. El ejemplo más simple es que para acceder a nuestro localhost escribimos http://localhost y en realidad estamos entrando al path C:\Inetpub\wwwroot, que es algo que si existe. <br />Referencia: https://desarrolloweb.com/articulos/1021.php</blockquote>
+      <blockquote>
+      Zend Scripting Language Engine: Un motor que procesa, interpreta y cifra scripts de PHP, nos ayuda a tener más estructuras de control, manejo de APIs y de bases de datos.<br /> Referencia: https://www.zend.com/products/zend-server
+      </blockquote>    
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">settings_applications</i>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</div>
+      <div class="collapsible-body"><span>Se deberá cambiar el script de conexión de datos y escribir el IP a donde se van a conectar los clientes, username y password.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">computer</i>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</div>
+      <div class="collapsible-body"><span>Esto pasa porque PHP es un lenguaje no digerible ni procesable por un navegador web, ya que solo solicita la página al servidor, luego éste lo procesa y devuelve en un formato comprensible por el navegador.<br />Referencia: http://www.adelat.org/media/docum/nuke_publico/lenguajes_del_lado_servidor_o_cliente.html</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+

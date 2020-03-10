@@ -1,0 +1,81 @@
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-content">
+          <span class="card-title">Ejercicio 1</span>
+    
+    <p>Arreglo 1:</p>
+    <?php 
+        shuffle($arr1);
+        foreach ($arr1 as $value){
+        echo $value. ", ";
+        }?>
+    <blockquote>Promedio: <?= $prom1 ?></blockquote>
+    <p>Arreglo 2:</p>
+    <?php 
+        shuffle($arr2);
+        foreach ($arr2 as $value){
+        echo $value. ", ";
+        }?>
+    <blockquote>Promedio: <?= $prom2 ?></blockquote>
+    </div>
+    </div>
+  </div>
+      
+  <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-content">
+          <span class="card-title">Ejercicio 2</span>
+    
+        <p>Arreglo 1:</p>
+        <?php 
+            shuffle($arr1);
+            foreach ($arr1 as $value){
+            echo $value. ", ";
+            }?>
+        <blockquote>Mediana: <?= $med1 ?></blockquote>
+        <p>Arreglo 2:</p>
+        <?php 
+            shuffle($arr2);
+            foreach ($arr2 as $value){
+            echo $value. ", ";
+            }?>
+        <blockquote>Mediana: <?= $med2 ?></blockquote>
+        </div>
+        </div>
+      </div>
+</div>
+
+<div class="row">
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-content">
+          <span class="card-title">Ejercicio 3</span>
+            <div class="row">
+                <div class="col s12 m6">
+                    <blockquote>
+                    <p>Arreglo 1</p>
+                    <?php lista($arr1, $prom1, $med1);?>
+                    </blockquote>
+                </div>
+                <div class="col s12 m6">
+                    <blockquote>
+                    <p>Arreglo 2</p>
+                    <?php lista($arr2, $prom2, $med2);?>
+                    </blockquote>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+      </div>
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-content">
+          <span class="card-title">Ejercicio 4</span>
+            
+        </div>
+      </div>
+    </div>
+</div>
+
