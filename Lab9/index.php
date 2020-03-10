@@ -64,6 +64,32 @@
     
   }
 
+  function tabla(){
+    $n = rand(3,15);
+    echo "<p>Numero</p>" .$n ;
+    echo "<blockquote>";
+    echo "<table class=\"highlight\">
+              <tbody>";
+      //cuadrados
+      echo"<tr> <th> Cuadrado </th>";
+    
+      for($i = 1; $i<= $n; $i++){
+        echo "<td>" .pow($i,2). "</td>";
+        
+      }
+      //Cubos
+      //cuadrados
+      echo"<tr> <th> Cubo </th>";
+      for($i = 1; $i<= $n; $i++){
+        echo "<td>" .pow($i,3). "</td>";
+        
+      }
+    
+    echo "</tbody>
+          </table>";
+    echo "</blockquote>";
+  }
+
   $arr1 = array(45,60,34,78,56,22);
   $arr2 = array(20,64,890,12,10,52,6);
   

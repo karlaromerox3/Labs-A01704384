@@ -20,7 +20,7 @@
     </li>
     <li>
       <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">settings_applications</i>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</div>
-      <div class="collapsible-body"><span>Se deberá cambiar el script de conexión de datos y escribir el IP a donde se van a conectar los clientes, username y password.</span></div>
+      <div class="collapsible-body"><span>Se deberá cambiar el script de conexión de datos y escribir el IP a donde se van a conectar los clientes, username y password. Además, en el archivo php.ini, en la sección de error handling and logging, hay que apagar todos los display errors, haciendo que se vayan a un error.log para debuggeo y mejor presentación al usuario.<br />Referencia: https://www.codementor.io/php/tutorial/how-to-setup-php-development-production-server</span></div>
     </li>
     <li>
       <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">computer</i>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</div>
