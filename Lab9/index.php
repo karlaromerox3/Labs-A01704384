@@ -90,6 +90,27 @@
     echo "</blockquote>";
   }
 
+  function libre(){
+    $datos = "wjmzbmr";
+    $count = 0;
+    $letras = [];
+    
+    echo "<h5>Datos: ".$datos."</h5> ";
+    for($i=0; $i<strlen($datos); $i++){
+      if(!in_array($datos[$i], $letras)){
+        $count+=1;
+        $letras[] = $datos[$i];
+      }
+    }
+    
+    echo "<h5>Different letters: ".$count."</h5>";
+    
+    if($count%2==1){
+        echo"<h5>IGNORE HIM!</h5>";
+    }else echo"<h5>CHAT WITH HER!</h5>";
+    
+  }
+
   $arr1 = array(45,60,34,78,56,22);
   $arr2 = array(20,64,890,12,10,52,6);
   
@@ -101,7 +122,7 @@
   $med2 = mediana($arr2);
   
   include("_body.html");  
-  include("_ej1.html");
+  include("_ejercicios.html");
   
   include("_footer.html"); 
 ?> 
