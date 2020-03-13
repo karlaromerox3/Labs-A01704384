@@ -1,0 +1,61 @@
+<nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo center">Lab 9. Introducción a php</a>
+    
+  </div>
+</nav>
+
+<div class="container ">
+  <ul class="collapsible expandable blue-grey darken-1 white-text">
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Por qué es una buena práctica separar el controlador de la vista?</div>
+      <div class="collapsible-body"><span>Porque permite separar los sistemas en información y lógica, e interfaz de usuario. De esta manera, se habla de un controlador que se encarga de las entradas, procesamiento, salida y busqueda de datos; y otro para entregar los dat.os en una presentación amigable para el usuario. Toda esta división permite mayor mantenibilidad y modularidad.</span>
+      <span><br />Referencia: https://codingornot.com/mvc-modelo-vista-controlador-que-es-y-para-que-sirve</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?</div>
+      <div class="collapsible-body"><span>
+        <blockquote>
+          <strong>$_SERVER </strong> Contiene información de cabeceras, rutas y ubicaciones de script del servidor web.
+        </blockquote>
+        <blockquote>
+          <strong>$_FILES </strong> Asociación de elementos que se han subido usando POST.
+        </blockquote><blockquote>
+          <strong>$_COOKIE </strong> Asociativo de variables pasadas al script con Cookies.
+        </blockquote>
+        <blockquote>
+          <strong>$_SESSION </strong> Tiene un conjunto de variables de sesión para el script que se este corriendo.
+        </blockquote>
+        <blockquote>
+          <strong>$_REQUEST </strong> Tiene lo mismo que contiene $_GET, $_POST y $_COOKIE.
+        </blockquote>
+        
+        
+        <br />Referencia: https://www.php.net/manual/es/language.variables.superglobals.php</span>
+      </div>
+    </li>
+    
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.</div>
+      <div class="collapsible-body"><span>
+        <blockquote>
+          <strong>str-replace </strong> devuelve un arreglo modificado de forma que se reemplazan las apariciones de un string con otro.
+        </blockquote>
+        <blockquote>
+          <strong>imagecreatetruecolor </strong> devuelve una imagen en negro de x por y dimensiones.
+        </blockquote>
+        
+        </span>
+      <span><br />Referencia: https://www.php.net/manual/es/functions.internal.php</span></div>
+    </li>
+    
+     <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Qué es XSS y cómo se puede prevenir?</div>
+      <div class="collapsible-body"><span>Es un tipo de ataque de código malicioso que se envía a través de scripts a un usuario. Normalmente son causados porque no se validan los campos de input en las páginas web. <br />Se pueden prevenir usando htmlentities y htmlspecialchars.</span>
+      <span><br />Referencia: https://owasp.org/www-community/attacks/xss/<br>https://medium.com/@jpmorris/how-to-prevent-xss-attacks-by-escaping-output-in-php-942204bf184                                                                </span></div>
+    </li>
+    
+  </ul>
+</div>
+
+
