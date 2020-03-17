@@ -1,0 +1,62 @@
+<div class="container">
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">¿Eres elegible para una beca?</a>
+    </div>
+  </nav>
+    <h5>Llena los campos SIN USAR ACENTOS.</h5>
+    <div class="row">
+    <form class="col s12" action="beca.php" method="POST">
+     <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Juan" id="nombre" name="nombre" type="text" class="validate" required>
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Pérez Torres" id="apeido" name="apeido" type="text" class="validate" required>
+          <label for="Apeido">Apeidos</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="90" id="promedio" name="promedio" type="number" class="validate" required max="100" min="0">
+          <label for="promedio">Promedio</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Monterrey" id="ciudad" name = "ciudad" type="text" class="validate" required>
+          <label for="ciudad">Ciudad</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Nuevo León" id="estado" name="estado" type="text" class="validate" required>
+          <label for="Estado">Estado</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">email</i>
+          <input placeholder="ejemplo@algo.com" name="email" id="email" type="email" class="validate" required>
+          <label for="email">Email</label>
+        </div>
+         <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input placeholder="55-55-555"id="tel" name="tel" type="tel" class="validate" required>
+          <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">send</i>
+            <input class="btn" type="submit" value="Enviar">
+          </div>
+        </div>
+      </div>  
+      
+    </form>
+  </div>
+    
+</div>
+
+   

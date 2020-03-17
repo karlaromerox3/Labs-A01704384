@@ -3,7 +3,7 @@ var tabla   = document.createElement("table");
 
 function crearTabla() {
   // Obtener la referencia del elemento article
-  var body = document.getElementsByTagName("arti cle")[0];
+  var body = document.getElementsByTagName("article")[0];
  
   // Crea un elemento <table> y un elemento <tbody>
   
