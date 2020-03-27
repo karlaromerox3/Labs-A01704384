@@ -1,0 +1,151 @@
+/*
+COLORES DE CASA MARIA GORETTI
+Azul -> #0a0d52
+Rosa -> #f0037f
+
+ */
+
+body {
+   overflow-x: hidden;
+   font-family: 'Open Sans', sans-serif !important;
+   color: #f0037f;
+   background-color: white;
+}
+
+.btn-blanco {
+    background-color: #fbfefe !important;
+    border-color: #fbfefe !important;
+    color: #0a0d52;
+}
+
+.btn-primary:hover {
+  color: #f0037f;
+}
+
+.container-fluid {
+  color: #0a0d52;
+}
+
+.logo-CMG {
+     width: 150px;
+     height: 100px;
+}
+
+.navbar {
+   margin: 5px;
+   border-radius: 10px;
+   background-color: #fbfefe !important;
+}
+
+.overflow-auto {
+  background-color: #eee;
+  width: 600px;
+  height: 400px;
+  border: 1px dotted black;
+  overflow: scroll;
+}
+
+.bodycontainer {
+   padding-top: 20px;
+   padding-left : 10px;
+   padding-right: 10px;
+}
+
+.imgprofile {
+    width: 50px;
+    height: 50px;
+}
+
+
+.dropdown-divider {
+border-color: #fbfefe !important;
+}
+
+.dropdown-item {
+  color: #0a0d52 !important;
+}
+
+.dropdown-item:hover {
+  color: #f0037f !important;
+  background-color: white;
+}
+
+.nav-item:hover {
+   /* background-color: #0a0d52 !important; */
+   border-color: #fbfefe !important;
+   color: #f0037f !important;
+}
+
+.nav-link:hover {
+  color: #f0037f !important;
+} 
+
+.list-group-item {
+  background-color: #fbfefe !important;
+  color: #0a0d52;
+}
+
+.list-group-item:hover {
+  color: #f0037f !important;
+}
+
+#menu-toggle {
+  color: #f0037f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+
+ #navbarDropdown  {
+   color: #0a0d52;
+ }
+
+
+ /*!
+  * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+  * Copyright 2013-2019 Start Bootstrap
+  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+  */
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  background-color: #fbfefe !important;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}

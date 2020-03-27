@@ -1,0 +1,60 @@
+
+#datosPersonales {
+  display: block;
+  position: relative;
+}
+
+#datosContacto {
+  display: none;
+  position: relative;
+}
+
+#datosContratacion {
+  display: none;
+  position: relative;
+}
+
+#datosNomina {
+  display: none;
+  position: relative;
+}
+
+#benefNomina {
+  display: none;
+  position: relative;
+}
+
+#registroExitoso {
+  display: none;
+  position: relative;
+}
+
+#progressBar{
+  width: 1%;
+  background-color: #0a0d52;
+}
+
+#archivosEmp {
+  display: none;
+  position: relative;
+}
+
+h2{
+	font-size: 50px;
+}
+h3{
+	text-align: center;
+	padding-top: 10px;
+}
+h5{
+	text-align: center;
+	color: black;
+}
+
+p{
+	color: black;
+}
+
+.form-control{
+	margin-right: 10px;
+}

@@ -1,0 +1,49 @@
+.mapouter{
+    position:relative;
+    text-align:right;
+    height: 100%;
+    width: 100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height: 100%;
+    width: 100%;
+}
+.bg-primary{
+    background-color:#0a0d52!important;
+}
+.text-primary{
+    color:#f0037f!important;
+}
+
+
+.btn-modificar{
+    background-color: #808080!important; 
+}
+
+.badge{
+    background-color: #f0037f!important;
+    margin: 0.8%;
+}
+
+.btn-submit{
+    background-color: #0a0d52!important;
+}
+.form-control{
+	margin-right: 10px;
+}
+
+#borradoExitoso{
+    display: none;
+}
+
+#llenado{
+    display: block;
+}
+
+#guardarBien{
+    display: none;
+}
+
+
