@@ -8,35 +8,35 @@
           <div class="container">
           <section id="datosPersonales">
             <h3>DATOS PERSONALES</h3>
-            <form action="datosPer.php" enctype="multipart/form-data" method="post">
+            <form action="datPer.php" enctype="multipart/form-data" method="POST">
                 <div class="form-group">
                   <i class="fas fa-user"></i>
                   <label for="nombreEmp">Nombre:</label>
                   <div class="form-inline">
-                    <input pattern="[[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'- ]" type="text" class="form-control" placeholder="Juan" id="nombreEmp" required>
-                    <input pattern="[[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'- ]" type="text" class="form-control" placeholder="Ramírez" id="apellidoPatEmp" required>
-                    <input pattern="[[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'- ]" type="text" class="form-control" placeholder="Pérez" id="apellidoMatEmp" required>
+                    <input  type="text" class="form-control" placeholder="Juan" id="nombreEmp" name="nombreEmp" required>
+                    <input  type="text" class="form-control" placeholder="Ramírez" id="apellidoPatEmp" name="apellidoPatEmp" required>
+                    <input  type="text" class="form-control" placeholder="Pérez" id="apellidoMatEmp" name="apellidoMatEmp"required>
                   </div>
                 </div>
                 <div class="form-group">
                   <i class="far fa-calendar-alt"></i>
                   <label for="fechaNacimiento">Fecha de nacimiento:</label>
-                  <input type="date" class="form-control" placeholder="" id="fechaNacimiento" required>
+                  <input type="date" class="form-control" placeholder="" id="fechaNacimiento" name="fechaNacimiento" required>
                 </div>
                 <div class="form-group">
                   <label for="rfcEmp">RFC:</label>
-                  <input pattern="[A-Za-z0-9]+{13}" type="text" class="form-control" placeholder="MJHS950103FCE" id="rfcEmp" required>
+                  <input pattern="[A-Za-z0-9]+{13}" type="text" class="form-control" placeholder="MJHS950103FCE" name="rfcEmp"id="rfcEmp" required>
                 </div>
                 <div class="form-group">
                   <label for="curpEmp">CURP:</label>
-                  <input pattern="[A-Za-z0-9]+{18}" type="text" class="form-control" placeholder="HEGG560427MVZRRL04" id="curpEmp" required>
+                  <input pattern="[A-Za-z0-9]+{18}" type="text" class="form-control" placeholder="HEGG560427MVZRRL04" name="curpEmp"id="curpEmp" required>
                 </div>
                 <label for="segsocialEmp">No. de seguridad social:</label>
                 <div class="form-group form-inline">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">#</span>
                       </div>
-                  <input pattern="[0-9]{11}" type="text" class="form-control" placeholder="" id="segsocialEmp" required>
+                  <input pattern="[0-9]{11}" type="text" class="form-control" placeholder="" name="segsocialEmp" id="segsocialEmp" required>
                 </div>
                 <div class="col-6 sm">
                   <div class="form-group">

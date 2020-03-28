@@ -19,7 +19,7 @@
 
 
 .btn-modificar{
-    background-color: #808080!important; 
+    background-color: #808080!important;
 }
 
 .badge{
@@ -46,4 +46,9 @@
     display: none;
 }
 
+ #fotoEmp{
+    float: center;
+    width: 30%;
+    height: 30%;
+ }
 

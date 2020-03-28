@@ -47,15 +47,17 @@
 
     //checking data
 
-    if(!(isset($_POST["nombreEmp"]) && isset($_POST["apeidoPatEmp"]) && isset($_POST["apeidoMatEmp"])
+    if(!(isset($_POST["nombreEmp"]) && isset($_POST["apellidoPatEmp"]) && isset($_POST["apellidoMatEmp"])
        && isset($_POST["fechaNacimiento"]) && isset($_POST["rfcEmp"]) && isset($_POST["curpEmp"]) && isset($_POST["segsocialEmp"]))){
-        die();
+        die("Checar datos");
     }
 
+    $foto = "uploads/".$_FILES["fotoEmpleado"]["name"];
     $nombreEmp = htmlspecialchars($_POST["nombreEmp"]);
-    $apeidoPatEmp = htmlspecialchars($_POST["apeidoPatEmp"]);
-    $apeidoMatEmp = htmlspecialchars($_POST["apeidoMatEmp"]);
+    $apellidoPatEmp = htmlspecialchars($_POST["apellidoPatEmp"]);
+    $apellidoMatEmp = htmlspecialchars($_POST["apellidoMatEmp"]);
     $fechaNacimiento = htmlspecialchars($_POST["fechaNacimiento"]);
+    $edad = (int)date('Y-m-d') - (int)$fechaNacimiento;
     $rfcEmp = htmlspecialchars($_POST["rfcEmp"]);
     $curpEmp = htmlspecialchars($_POST["curpEmp"]);
     $segsocialEmp = htmlspecialchars($_POST["segsocialEmp"]);
