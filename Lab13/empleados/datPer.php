@@ -1,5 +1,11 @@
 <?php
 
+    session_start();
+    
+    $_SESSION["nombreEmp"]=$_POST["nombreEmp"];
+    $_SESSION["apellidoPatEmp"]=$_POST["apellidoPatEmp"];
+    $_SESSION["apellidoMatEmp"]=$_POST["apellidoMatEmp"];
+
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["fotoEmpleado"]["name"]);
     $uploadOk = 1;
