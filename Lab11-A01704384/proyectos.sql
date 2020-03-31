@@ -1,0 +1,3 @@
+LOAD DATA INFILE 'proyectos.csv'
+INTO TABLE lab11.proyectos
+FIELDS TERMINATED BY ','
