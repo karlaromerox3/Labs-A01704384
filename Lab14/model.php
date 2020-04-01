@@ -28,7 +28,7 @@
         $consulta .= " AND M.Clave = ".$materiales;
     }
     if ($proveedores != "") {
-        $consulta .= " AND Prov.RFC = ".$proveedores;
+        $consulta .= " AND E.RFC = '".$proveedores."'";
     }
 
     if ($proyectos != "") {
