@@ -1,10 +1,11 @@
  <?php
+  session_start();
    require_once("model.php");
    $titulo = "Consultas a una BD";
    include("_header.html");
+   include("_retro.html");
    include("_forma_Buscar.html");
-
-    include("btn_registrar.html");
+   include("btn_registrar.html");
 
 
    if (isset($_POST["Materiales"])) {
