@@ -1,20 +1,23 @@
 <?php
   session_start();
   require_once("model.php");
-  $titulo = "Modificar Entrega"
 
-  $_POST["fecha"] = htmlspecialchars($_POST["fecha"]);
-  $_POST["Proyecto"] = htmlspecialchars($_POST["proyecto"]);
-  $_POST["Proveedor"] = htmlspecialchars($_POST["proveedor"]);
-  $_POST["Material"] = htmlspecialchars($_POST["material"]);
-  $_POST["Cantidad"] = htmlspecialchars($_POST["cantidad"]);
+  $material = htmlspecialchars($_POST["Materiales"]);
+  $proveedor = htmlspecialchars($_POST["Proveedores"]);
+  $proyecto = htmlspecialchars($_POST["Proyectos"]);
+  $fecha = htmlspecialchars($_POST["fecha"]);
+  $cantidad = htmlspecialchars($_POST["cantidad"]);
 
-  if(isset($_POST["lugar"])) {
-      if (editar_entrgea($_POST["fecha"], $_POST["proyecto"],$_POST["proveedor"], $_POST["material"], $_POST["cantidad"])) {
-          $_SESSION["mensaje"] = "Se editó el caso";
-      } else {
-          $_SESSION["warning"] = "Ocurrió un error al editar el caso";
-      }
+  if(isset($material) && isset($proveedor) && isset($proyecto) && isset($fecha) && isset($cantidad))
+  {
+    if(editar($material, $proveedor, $proyecto, $fecha, $cantidad))
+    {
+      $_SESSION["mensaje"] = "Se edito la entrega!";
+    }
+    else
+    {
+      $_SESSION["warning"] = "Hubo un error al editar la entrega!";
+    }
   }
 
   header("location:index.php");

@@ -1,0 +1,23 @@
+<a class='btn btn-primary' href='index.php' role='button'><span class='material-icons'>arrow_back</span> Regresar</a>
+    <form method="POST" action="controlador_actualizar.php" class="text-center">
+
+
+    <!--Material-->
+    <?= crear_select("Clave", "Descripcion", "Materiales", true, $clave); ?>
+    <?= crear_select("RFC", "RazonSocial", "Proveedores", true, $rfc); ?>
+    <?= crear_select("Numero", "Denominacion", "Proyectos", true, $numero); ?>
+    <input type="hidden" name="fecha" value="<?=$fecha?>">
+
+    <br/>
+
+    <label for="cantidad">Cantidad de materiales entregados:</label>
+    <br/>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="99999999" value="<?= $cantidad?>" required>
+
+
+
+    <br/>
+    <br/>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+
+</form>

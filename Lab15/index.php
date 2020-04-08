@@ -2,10 +2,10 @@
   session_start();
    require_once("model.php");
    $titulo = "Consultas a una BD";
-   include("_header.html");
-   include("_retro.html");
-   include("_forma_Buscar.html");
-   include("btn_registrar.html");
+   include("html/_header.html");
+   include("html/_retro.html");
+   include("html/_forma_Buscar.html");
+   include("html/btn_registrar.html");
 
 
    if (isset($_POST["Materiales"])) {
@@ -29,6 +29,6 @@
 
   echo consultar_materiales($materiales,$proveedores,$proyectos);
 
-   include("_footer.html");
+   include("html/_footer.html");
  ?>
 

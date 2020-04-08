@@ -4,7 +4,7 @@
     require_once("model.php");
     $titulo = "Registrar Entrega";
 
-    include("_header.html");
-    include("_forma_registrar.html");
-    include("_footer.html");
+    include("html/_header.html");
+    include("html/_forma_registrar.html");
+    include("html/_footer.html");
 ?>
