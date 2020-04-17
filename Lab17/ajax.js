@@ -38,4 +38,4 @@ function buscar() {
 }
 
 //Asignar al botón buscar, la función buscar()
-document.getElementById("buscar").onclick = buscar();
+document.getElementById("buscar").onclick = buscar;
