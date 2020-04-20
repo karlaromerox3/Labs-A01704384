@@ -18,6 +18,7 @@
 
    //Consulta las entregas a proveedores
    function consultar_materiales($materiales="",$proveedores="",$proyectos="") {
+    echo "Hola Mundo";
      $conexion_bd = conectar_bd();
 
      $resultado =  "<table><thead><tr><th>Fecha</th><th>Proyecto</th><th>Proveedor</th><th>Material</th><th>Cantidad</th></tr></thead>";
