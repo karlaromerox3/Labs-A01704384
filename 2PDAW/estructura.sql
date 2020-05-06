@@ -1,4 +1,9 @@
---
+--ESTRUCTURA DADA POR PHPMYADMIN
+
+
+
+
+
 -- Estructura de tabla para la tabla `incidente`
 --
 DROP TABLE IF EXISTS incidente;
