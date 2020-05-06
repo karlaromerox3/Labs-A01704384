@@ -1,0 +1,10 @@
+  <div class="container">
+
+            <h3>Registrar nuevo estado</h3>
+<form method="POST" action="controlador_insertarE.php" class="text-center">
+
+     <?=crear_select("idEstado", "nombre", "estado", false);?>
+     <br/>
+     <input type="hidden" name="id" value="<?= $_GET["id"] ?>"></input>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
