@@ -16,7 +16,7 @@ function conectar_bd(){
 
 
 
-function consultar_incidentes(){
+function consultar_incidentes($lugar="",$tipo=""){
     $conexion_bd = conectar_bd();
 
      $resultado =  '<table class="highlight">
@@ -29,8 +29,16 @@ function consultar_incidentes(){
                         </thead>
                         <tbody>';
 
-    $consulta = 'SELECT DISTINCT L.nombre as lugar, T.nombre as incidente, I.fecha as fecha FROM lugar as L, tipo_incidente as T, incidente as I WHERE L.idLugar = I.idLugar AND I.idTipo = T.idTipo ORDER BY I.fecha DESC';
+    $consulta = 'SELECT DISTINCT L.nombre as lugar, T.nombre as incidente, I.fecha as fecha FROM lugar as L, tipo_incidente as T, incidente as I WHERE L.idLugar = I.idLugar AND I.idTipo = T.idTipo ';
 
+    if($lugar != ""){
+        $consulta .= ' AND I.idLugar = '.$lugar.' ';
+    }
+    if ($tipo != ""){
+        $consulta .= ' AND I.idTipo = '.$tipo.' ';
+    }
+
+    $consulta .= ' ORDER BY I.fecha DESC ';
 
     $resultados = $conexion_bd->query($consulta);
 

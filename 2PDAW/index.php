@@ -4,6 +4,7 @@
    include("_header.html");
    include("mensaje.html");
    include("_inicio.html");
+   include("_formaBuscar.html");
 
   echo '<div id="resultados_consulta">';
   echo consultar_incidentes();
