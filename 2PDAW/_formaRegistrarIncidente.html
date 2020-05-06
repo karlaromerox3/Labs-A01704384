@@ -1,0 +1,13 @@
+  <div class="container">
+
+            <h3>Registrar nuevo incidente</h3>
+    <form method="POST" action="controlador_insertarIncidente.php" class="text-center">
+
+
+     <?=crear_select("idLugar", "nombre", "lugar", false);?>
+     <br/>
+     <?=crear_select("idTipo", "nombre", "tipo_incidente", false);?>
+     <br/>
+
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
