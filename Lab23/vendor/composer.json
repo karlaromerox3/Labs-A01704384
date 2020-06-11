@@ -1,0 +1,11 @@
+{
+    "require": {
+        "mpdf/mpdf": "^8.0"
+    }
+}
+
+{
+    "require": {
+      "sendgrid/sendgrid": "~7"
+    }
+  }

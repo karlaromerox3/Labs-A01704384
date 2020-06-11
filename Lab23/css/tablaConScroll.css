@@ -1,0 +1,37 @@
+.miTabla
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+th
+{
+	background-color: white;
+}
+.miTabla thead th {
+	position: sticky;
+	top: 0;
+}
+
+.my-custom-scrollbar {
+position: relative;
+height: 60vh;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ededed !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ededed !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ededed !important;
+}

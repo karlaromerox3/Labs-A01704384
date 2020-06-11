@@ -1,0 +1,16 @@
+
+<!--Mensaje de exito para insertar entrega-->
+<?php if(isset($_SESSION["mensaje"])): ?>
+	<div class="alert alert-success" id="mensaje" role="alert">
+	<?= $_SESSION["mensaje"] ?>
+	</div>
+	<?php unset($_SESSION["mensaje"])?>
+<?php endif;?>
+
+<!--Mensaje de error para insertar entrega-->
+<?php if(isset($_SESSION["warning"])): ?>
+	<div class="alert alert-danger" id="mensaje" role="alert">
+	<?= $_SESSION["warning"] ?>
+	</div>
+	<?php unset($_SESSION["warning"])?>
+<?php endif;?>

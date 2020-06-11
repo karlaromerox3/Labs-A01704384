@@ -1,0 +1,44 @@
+.my-custom-scrollbar {
+position: relative;
+height: 400px;;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+
+.row{
+    margin: 0.9%;
+}
+/*.btn-primary{
+    background-color: #f0037f!important;
+}*/
+
+.text-primary{
+    color:#f0037f!important;
+}
+
+.badge{
+    background-color: #0a0d52!important;
+    margin: 0.8%;
+    color: white!important;
+}
+
+#birthday{
+	border: 2px solid #0a0d52;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ededed !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ededed !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ededed !important;
+}

@@ -1,0 +1,47 @@
+<!-- Fluid Container -->
+<div class="container-fluid">
+    <!--Tarjetas y calendario-->
+
+    <div id="tarjetasCalendario" class="row">
+    <div class="col-md-10">
+      <center><h4>CALENDARIO GENERAL</h4></center>
+      <div id='calendar' class="calendario" ></div>
+    </div>
+
+    <div class="col-md-2 text-center" id="birthday">
+        <h4><span class="badge"><i class="fas fa-birthday-cake"></i> CUMPLEAÑOS</span></h4>
+        <p>Hoy <h7><script> document.write(new Date().toLocaleDateString()); </script> :</h7></p>
+        <?= consultarCumpleañosE(); ?>
+        <?= consultarCumpleañosD(); ?>
+        </center>
+
+    </div>
+    </div>
+
+    <br>
+    <hr>
+    	<center><h4>CONSULTAR MÉDICOS</h4></center>
+    	<!-- BOTON PARA REGISTRAR UNA NUEVA BENEFICIARIA -->
+		<div class="row mx-auto flex-row text-right">
+			<div class="col col-md-12">
+			<a class="btn btn-primary float-right text-right" href="../Medicos/registrarMedico.php">Registrar Médico <i class="fas fa-user-plus"></i></a>
+			</div>
+		</div>
+		<div class="row mx-auto flex-row text-left">
+
+			<!-- SELECT PARA CAMBIAR LA ESPECIALIDAD -->
+			<div class="col-md-8">
+				<?=crear_select("idEspecialidad", "nombre", "especialidad", false, "", "Buscar por especialidad:", true);?>
+			</div>
+		</div>
+
+				<!-- BOTON PARA REGRESAR A LA BUSQUEDA INICIAL -->
+		<div class="mx-auto text-center">
+		<button id="buscar" class="btn btn-primary">VER TODO</button>
+		</div>
+
+		<!-- TABLA DE MÉDICOS -->
+	<div id="resultados_consulta" class="miTabla table-wrapper-scroll-y my-custom-scrollbar mx-auto text-center">
+		<?= consultarMedicos(); ?>
+	</div>
+</div>

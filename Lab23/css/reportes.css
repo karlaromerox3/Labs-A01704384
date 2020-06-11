@@ -1,0 +1,34 @@
+.img-reporte
+{
+	width: 10%;
+}
+
+.textoTabla
+{
+	font-size: large;
+}
+@media print
+{
+.noprint {display:none;}
+table { page-break-inside:auto }
+thead { display:table-header-group }
+    tfoot { display:table-row-group }
+tr
+{
+  page-break-inside:avoid; page-break-after:auto
+}
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ededed !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ededed !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ededed !important;
+}
+
+

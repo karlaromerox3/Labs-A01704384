@@ -1,0 +1,326 @@
+.verPr a {
+	color: #007bff;
+}
+
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  color: #ededed !important;
+	  opacity: 1; /* Firefox */
+	}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ededed;
+  opacity: 1; /* Firefox */
+}
+.modal-body {
+	color: #0a0d52 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ededed;
+}
+
+	::-ms-input-placeholder { /* Microsoft Edge */
+	  color: #ededed !important;
+	}
+
+
+
+.cardlink a:active {
+	color: #fbfefe;
+}
+
+.elegirPrueba {
+	color: #0a0d52 !important;
+}
+
+svg
+{
+	width: 80vw !important;
+}
+
+
+/* --------------------------------------------------------- */
+/* ---------Leyenda de colores en grafica------------------- */
+/* --------------------------------------------------------- */
+#benefGraph {
+	color: #9bf6ff;
+}
+#catHabGraph {
+	color: #bdb2ff;
+}
+#catAreaGraph {
+	color: pink;
+}
+#sinCalifGraph {
+	color: #dcdcdd;
+}
+#noLograGraph {
+	color: #ffadad;
+}
+#procesoGraph {
+	color: #ffd6a5;
+}
+#lograGraph {
+	color: #caffbf;
+}
+#cardGraph {
+	background-color: #0a0d52;
+}
+
+  table {
+	color: #0a0d52 !important;
+	background-color: #fbfefe;
+  }
+
+  th {
+	background-color: #0a0d52;
+	color: white;
+  }
+
+	h5,h4 {
+		color: #0a0d52;
+	}
+
+	textarea.texti {
+		background-color: #fbfefe !important;
+		width: 90%;
+		height: 90%;
+
+	}
+
+	#linkPrueba {
+		color: #0a0d52;
+	}
+
+	#toastheader {
+		background-color: #28A745;
+		color: white;
+	}
+
+	#toastbody {
+		background-color: #ddffdd;
+		color: black;
+	}
+
+	#toastheaderPlan {
+		background-color: #ffc475;
+		color: white;
+	}
+
+	#toastbodyPlan {
+		background-color: #fff3cd;
+		color: black;
+	}
+
+	#toastheaderComparar {
+		background-color: red;
+		color: white;
+	}
+
+	#toastbodyComparar {
+		background-color: #ff6666;
+		color: black;
+	}
+
+
+
+.btnInfoBarra {
+	color: #0a0d52 !important;
+	border-color: #0a0d52 !important;
+}
+
+.btnInfoBarra:hover {
+	background-color: #3a3d74 !important;
+}
+
+.salir  {
+	background-color: #0a0d52 !important;
+}
+
+.modalSalirStyle  {
+	background-color: #0a0d52 !important;
+}
+
+.guardar_observ {
+	background-color: #0a0d52 !important;
+	color: white;
+}
+
+.guardar_observ:hover {
+	color: lightblue;
+}
+
+.PlanSeccion {
+	color: #0a0d52;
+	background-color: #fbfefe;
+	border-color: white;
+}
+
+.AreaPlan {
+	width: 80%;
+}
+
+.headObserv {
+	background-color: #0a0d52 !important;
+	color: white !important;
+}
+
+.PlanSeccion:hover {
+	color: white !important;
+	background-color: #0a0d52;
+	border-color: white;
+}
+
+.CatFormatBtn {
+	color: white !important;
+	background-color: #0a0d52;
+	border-color: #0a0d52;
+}
+
+
+
+.PlanSeccion .interior {
+	color: #0a0d52 !important;
+	background-color: #fbfefe;
+}
+
+
+
+
+
+
+/*
+ICON COLORS
+*/
+.succeed {
+	color: green;
+  }
+
+  .tries {
+	color: lightblue;
+  }
+
+  .fails {
+	color: red;
+  }
+
+
+  /*
+  PROGRESS BARS COLORS
+  */
+  .pb-completed {
+	background-color: #f0037f;
+  }
+
+  .pb-progress {
+	background-color: #0a0d52;
+  }
+
+  .pb-undone {
+	background-color: #fff3f9;
+  }
+
+	#progressBarPrueba {
+		/* 100/13 = 7.6923% */
+    width: 0%;
+    background-color: #0a0d52;
+}
+
+
+
+/* CARD BENEFICIARIA */
+  .content {
+	color: #0a0d52;
+  }
+
+  .foto-prueba {
+	width: 130px;
+	height: 170px;
+	align-content: center !important;
+  }
+
+  .card-title {
+	  color: #f0037f;
+  }
+
+	.planCard {
+		position: fixed;
+		margin: inherit;
+	}
+
+	.cardCompleta {
+		background-color: #fbfefe;
+	}
+
+	.cardMostrarPrueba {
+		background-color: #0A0D52;
+		color: white;
+	}
+
+	.btnEmpezarPrueba {
+		background-color: #fbfefe;
+		color: #0A0D52;
+		border-color: #0A0D52;
+	}
+
+	.btnEmpezarPrueba:hover  {
+		background-color: #0A0D52;
+		color: white;
+	}
+
+	.btnEmpezarPrueba:active {
+		border-color: #0A0D52;
+	}
+
+
+	/* TABLA */
+	.areaHab {
+		max-width: 150px;
+	}
+
+	.tabComparar {
+		max-width: 20%;
+		text-align: center;
+	}
+
+
+/* Botones */
+.btn-next {
+border: 2px solid #f0037f !important;
+color: #f0037f;
+}
+
+.btn-next:hover {
+	background-color: white;
+	color: #fff3f9;
+}
+
+.btn-next:active {
+	background-color: #f0037f !important;
+}
+
+.btn-plan:active {
+	background-color: white !important;
+}
+
+.btn-comparar {
+	display: none;
+}
+
+
+
+  #commentBox {
+	display: none;
+  }
+
+	.btnPruebaformat:hover {
+		color: white !important;
+	}
+
+	#modalEliminarCuerpo {
+		color: black;
+	}
+
+	#modalEliminarAlerta {
+		color: red;
+	}

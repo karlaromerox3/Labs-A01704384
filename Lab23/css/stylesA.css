@@ -1,0 +1,84 @@
+h2{
+	font-size: 50px;
+}
+h3{
+	text-align: center;
+	padding-top: 10px;
+}
+h5{
+	text-align: center;
+	color: black;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ededed !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ededed !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ededed !important;
+}
+
+
+p{
+	color: black;
+}
+#datosPersonales{
+  display: none;
+  position: relative;
+}
+#datosIngreso{
+  display: block;
+  position: relative;
+}
+#datosFamiliares{
+  display: none;
+  position: relative;
+}
+#datosAcademicos{
+  display: none;
+  position: relative;
+}
+#archivosVarios{
+  display: none;
+  position: relative;
+}
+#registroExitoso{
+	display: none;
+	position: relative;
+}
+.form-control{
+	margin-right: 10px;
+}
+#leftSide{
+	margin-left: 10px;
+}
+strong{
+	color: black;
+}
+.btn{
+	margin: 10px 10px 0px 0px;
+}
+.row{
+	margin-bottom: 25px;
+}
+#customFile .custom-file-control:lang(en)::after {
+  content: "Seleccionar archivo...";
+}
+
+/*when a value is selected, this class removes the content */
+.custom-file-control.selected:lang(en)::after {
+  content: "" !important;
+}
+
+.custom-file {
+  overflow: hidden;
+}
+.custom-file-control {
+  white-space: nowrap;
+}

@@ -1,0 +1,42 @@
+      <!-- Page-content-wrapper ends -->
+	</div>
+
+	<!-- Container ends -->
+	</div>
+
+</div>
+
+
+	<!--GOOGLE CHARTS API-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//unpkg.com/sunburst-chart"></script>
+		<script src="//unpkg.com/d3"></script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="../vendor/jquery/jquery-3.5.0.min.js"></script>
+	<script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Menu Toggle Script -->
+	<script>
+	  $("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+	  });
+	  $(function () {
+      	$('[data-toggle="popover"]').popover()
+  	 });
+	</script>
+
+    <script>
+    $(document).ready(function() {
+    $("body").tooltip({ selector: '[data-tooltip=tooltip]' });
+	});
+    </script>
+
+	<?php if(isset($scripts)): agregar_js($scripts); endif; ?>
+
+  </body>
+
+  </html>

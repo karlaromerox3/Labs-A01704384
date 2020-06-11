@@ -1,0 +1,42 @@
+
+#restrictions {
+  display:none;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.valid {
+  color: #66cc66;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ededed !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ededed !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ededed !important;
+}
+
+
+.valid:before {
+  position: relative;
+  left: 250px;
+  content: ":)";
+}
+
+.invalid {
+  color: #ff6666;
+}
+
+.invalid:before {
+  position: relative;
+  left: 250px;
+  content: ":(";
+}

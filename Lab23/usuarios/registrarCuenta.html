@@ -1,0 +1,118 @@
+
+        <!-- Fluid Container -->
+        <div class="container-fluid">
+         
+<?php if(isset($editar)): ?>
+    <!-- Queda pendiente para el controlador de edicón de usuario-->
+    <form method="POST" action="../controladores/controlador_actualizarU.php" class="text-left needs-validation" id="registrarCuenta">
+
+                <h1 class="mt-4">Modificación de Cuentas</h1>   
+
+
+        <?php else: ?>
+            <form method="POST" id="registrarCuenta" action="../controladores/controlador_InsertarU.php" >
+
+               <h1 class="mt-4">Creación de Cuentas</h1>      
+                <?php endif; ?>
+                    <!-- Queda pendiente para el controlador de edición de usuario-->
+                    <?php if(isset($editar)): ?>
+
+                        <input type="hidden" name="idUsuario" value="<?=$idUsuario?>" required>
+
+                        <?php endif; ?>
+
+                                        <!--Elegir usuario -->
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                             *<label for="usuario">Usuario:</label>
+                                             <br>
+                                              <input  maxlength="20" class="form-control" placeholder="maria123" name="usuario" 
+                                              <?php if(isset($usuario)): ?> value= <?= $usuario ?> <?php endif; ?> 
+                                              id="usuario" type="text" required>
+                        <div class="invalid-feedback">Escribe un nombre válido (debe contener numeros).</div>
+                                              
+                                            </div>
+                                          </div>
+                                      
+                                        <!--Elegir contraseña -->
+                                         <?php if(isset($editar)): ?>
+
+                                            *<label for="password">Contraseña: </label>
+                                      <input maxlength="80" type="password" class="form-control" name="password" id="password"  onkeyup="validatePswd();" onfocus="showRestrictions();" onblur="hideRestrcitions();" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+                                      *<label for="confirmation">Confirmar Contraseña:</label>
+                                      <input maxlength="80"class="form-control" type="password" name="confirmation" id="confirmation" onkeyup="validatePswd();" > 
+
+
+                                      <span id="confirmationMsg" class="confirm-message"></span>
+                                   <section>
+                                  <div id="restrictions">
+                                    <br>
+                                    <h4>Asegurese de que su contraseña contenga: </h4>
+                                    <ul>
+                                      <li id = "letter" class="invalid">Al menos una letra minuscula.</li>
+                                      <li id = "capital" class="invalid">Al menos una letra mayuscula.</li>
+                                      <li id = "number" class="invalid">Al menos un numero.</li>
+                                      <li id = "length" class="invalid">Al menos 8 caracteres.</li>
+                                    </ul>
+                                  </div>
+                                </section>
+                                <?php else: ?>
+                                                                *<label for="password">Contraseña: </label>
+                                      <input maxlength="80"type="password" class="form-control" name="password" id="password"  onkeyup="validatePswd();" onfocus="showRestrictions();" onblur="hideRestrcitions();" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                      *<label for="confirmation">Confirmar Contraseña:</label>
+                                      <input maxlength="20" class="form-control" type="password" name="confirmation" id="confirmation" onkeyup="validatePswd();" required> 
+
+
+                                      <span id="confirmationMsg" class="confirm-message"></span>
+                                   <section>
+                                  <div id="restrictions">
+                                    <br>
+                                    <h4>Asegurese de que su contraseña contenga: </h4>
+                                    <ul>
+                                      <li id = "letter" class="invalid">Al menos una letra minúscula.</li>
+                                      <li id = "capital" class="invalid">Al menos una letra mayúscula.</li>
+                                      <li id = "number" class="invalid">Al menos un número.</li>
+                                      <li id = "length" class="invalid">Al menos 8 caracteres.</li>
+                                    </ul>
+                                  </div>
+                                </section>
+
+        <?php endif; ?>
+
+                            
+
+                                        <!--Elegir nombre -->
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                           *<label for="nombre">Nombre: </label>
+                                           <br>
+
+                                              <input maxlength="100" name="nombre" placeholder="Juan Perez"  
+                                              <?php if(isset($nombre)): ?> value= '<?= $nombre ?>'<?php endif; ?>
+                                              type="text" class="form-control" id="nombre" required>
+
+                                               <div class="invalid-feedback">Escribe un nombre válido (no debe de contener numeros).</div>
+
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <!--Selecciona rol -->
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                              *  <?php if(isset($idRol)): ?> 
+                                                <?=crear_select("id", "nombre", "rol", true, $idRol, "Rol");?>
+                                                <?php else: ?>
+                                                 <?=crear_select("id", "nombre", "rol", true,0,"Rol");?>
+                                                <?php endif; ?>
+
+
+                                            </div>
+                                        </div>
+                    
+                    
+                    <input class="btn btn-primary" type="submit" id="subir" value="Registrar">
+            </form>
+          </div>
+</form>
+</div>
+

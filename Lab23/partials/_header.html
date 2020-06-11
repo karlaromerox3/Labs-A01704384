@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><?= $titulo ?></title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Custom styles for this template -->
+  <link href="../css/simple-sidebar.css" rel="stylesheet">
+
+
+  <?php if(isset($estilos)): agregar_estilos($estilos); endif; ?>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Container wrapper -->
+    <div class="d-flex bodycontainer" id="wrapper">
+      <!-- Sidebar -->
+            <div class="noprint">
+
+      <div class="border-right d-none d-md-block" id="sidebar-wrapper">
+        <?php if(isset($registrando)) : ?>
+            <div class="sidebar-heading"><input type="image" data-toggle="modal" data-target=".modalSalir" src="../images/logo-CMG.jpg" class="logo-CMG rounded"></input></div>
+        <?php elseif($_SESSION["usuario"] == "Administradora") : ?>
+            <div class="sidebar-heading"><a href="../usuarios/vistaAdmin.php"><img src="../images/logo-CMG.jpg" class="logo-CMG rounded" alt="logo CMG"></a></div>
+        <?php else: ?>
+            <div class="sidebar-heading"><a href="../usuarios/vistaEmpleado.php"><img src="../images/logo-CMG.jpg" class="logo-CMG rounded" alt="logo CMG"></a></div>
+        <?php endif; ?>
+        <div class="list-group list-group-flush">
+              <?php botones_sidebar($botones); ?>
+        </div>
+      </div>
+    </div>
+      <!-- Sidebar ends -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+          <button class="btn btn-blanco" id="menu-toggle">
+            <?= $titulo ?>
+          </button>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+
+                <!--botones para vista en telefono-->
+                <div class=" d-sm-block d-md-none">
+                  <?php if(isset($registrando)): ?>
+                  <a href='#modalSalir' data-target=".modalSalir" data-toggle="modal" class='list-group-item list-group-item-action'>Inicio</a>
+                  <?php elseif($_SESSION["usuario"] == "Administradora") : ?>
+                  <a href='../usuarios/vistaAdmin.php' class='list-group-item list-group-item-action'>Inicio</a>
+                  <?php else: ?>
+                  <a href='../usuarios/vistaEmpleado.php' class='list-group-item list-group-item-action'>Inicio</a>
+                  <?php endif; ?>
+                  <?php botones_sidebar($botones); ?>
+                </div>
+
+                 <a class="nav-link dropdown-toggle ml-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <?php date_default_timezone_set('America/Mexico_City'); ?>
+            <?php $date = date('H'); if($date >= 12 && $date < 19) : ?>
+              Buenas tardes,
+            <?php elseif($date >= 19 && $date <= 23) : ?>
+              Buenas noches,
+            <?php else : ?>
+              Buenos días,
+            <?php endif; ?>
+
+            <?= $_SESSION["nombreA"] ?>
+
+          </a>
+
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <?php if(isset($registrando)): ?>
+                  <a class="dropdown-item" data-toggle="modal" data-target=".cerrarSesion" href="#cerrarSesion">Cerrar sesión</a>
+                  <a class="dropdown-item" data-toggle="modal" data-target=".cuentaPersonal" href="#cuentaPersonal">Configuración de cuenta</a>
+                  <?php else: ?>
+                  <a class="dropdown-item" href="../controladores/cerrarSesion.php">Cerrar sesión</a>
+                  <a class="dropdown-item" href="../usuarios/modificarCuentaPersonal.php">Configuracion de cuenta</a>
+                  <?php endif; ?>
+                  <!--El botón para configurar usuarios solo se muestra si la cuenta es admin-->
+                  <?php if($_SESSION["usuario"] === "Administradora"):?>
+                            <div class="dropdown-divider"></div>
+                            <?php if(isset($registrando)): ?>
+                            <a class="dropdown-item" data-target=".modalUsuarios" data-toggle="modal" href="#modalUsuarios">Configuración de usuarios</a>
+                            <?php else: ?>
+                            <a class="dropdown-item" href="../usuarios/consultarCuentas.php">Configuración de usuarios</a>
+                            <?php endif; ?>
+                  <?php endif; ?>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Navbar ends -->

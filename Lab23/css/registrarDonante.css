@@ -1,0 +1,76 @@
+
+#botonesDonantes {
+  visibility: hidden;
+}
+
+#donanteGeneral {
+  opacity: 100;
+  position: relative;
+  width: 100%;
+}
+
+#datosFacturacion {
+  opacity: 0;
+  position: absolute;
+  width: 1%;
+}
+
+#donanteParticular {
+  opacity: 0;
+  position: absolute;
+  width: 1%;
+}
+
+#donanteEmpresa {
+  opacity: 0;
+  position: absolute;
+  width: 1%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ededed !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ededed !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ededed !important;
+}
+
+
+
+#registroExitoso {
+  opacity: 0;
+  position: absolute;
+  width: 1%;
+}
+
+#progressBar{
+  width: 0%;
+  background-color: #0a0d52;
+}
+
+
+
+h2{
+	font-size: 50px;
+}
+h3{
+	text-align: center;
+	padding-top: 10px;
+}
+h5{
+	text-align: center;
+	color: black;
+}
+
+p{
+	color: black;
+}
+
+.form-control{
+	margin-right: 10px;
+}

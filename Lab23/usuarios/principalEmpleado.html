@@ -1,0 +1,41 @@
+<!-- Fluid Container -->
+<div class="container-fluid">
+	<div class="mx-auto text-center">
+		<center><h4>CALENDARIO GENERAL</h4></center>
+		<div id='calendar' class="calendario"></div>
+	</div>
+	<br><br><br><br><br><br><br><br>
+	<hr>
+  <h3>CONSULTAR BENEFICIARIAS</h3>
+	<!-- TABLA DE BENEFICIARIAS -->
+	<div id="resultados_consultaGeneral" class="miTabla table-wrapper-scroll-y my-custom-scrollbar mx-auto text-center">
+		<?= consultarBeneficiarias("","","","","","1"); ?>
+	</div>
+
+	 <hr>
+    	<center><h4>CONSULTAR MÉDICOS</h4></center>
+		<div class="text-center">
+			<!-- SELECT PARA CAMBIAR LA ESPECIALIDAD -->
+			<div class="col-md-8 mx-auto">
+				<?=crear_select("idEspecialidad", "nombre", "especialidad", false, "", "Buscar por Especialidad:", true);?>
+			</div>
+		</div>
+
+				<!-- BOTON PARA REGRESAR A LA BUSQUEDA INICIAL -->
+		<div class="mx-auto text-center">
+		<button id="buscar" class="btn btn-primary">VER TODO</button>
+		</div>
+
+		<!-- TABLA DE MÉDICOS -->
+	<div id="resultados_consulta" class="miTabla table-wrapper-scroll-y my-custom-scrollbar mx-auto text-center">
+		<?= consultarMedicos(); ?>
+	</div>
+
+ 	
+</div>
+        
+          
+
+         
+
+

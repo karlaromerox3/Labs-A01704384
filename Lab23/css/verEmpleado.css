@@ -1,0 +1,36 @@
+#info{
+    margin-right: "20%";
+}
+
+.badge{
+    background-color: #0a0d52!important;
+    margin: 0.8%;
+}
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .badgeBeneficiaria
+  {
+	color: white!important;
+  }
+
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ededed !important;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ededed !important;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ededed !important;
+  }
+
+.pink-hover:hover{
+  color: #F0037F;
+}

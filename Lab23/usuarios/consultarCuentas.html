@@ -1,0 +1,44 @@
+
+
+        <!-- Fluid Container -->
+        <div class="container-fluid">
+          <h1 class="mt-4">Configuración de usuarios</h1>
+          <div class="text-right">
+            <a class="btn btn-primary " href="registrarCuenta.php">Registrar Cuenta 
+              <i class="fas fa-user-plus"></i>
+            </a>
+          </div>
+          <br>
+          <div id="filtrosBusqueda" class="clearfix text-center">
+            <!--Busqueda por nombre con searchbox-->
+            <div class="float-left col-md-4">
+              <label  for="userInput_usuario">Buscar por nombre:</label> 
+              <div class="d-flex">
+              <input class="form-control" type="text" placeholder="Eric"  id="userInput_usuario" onkeyup="sendRequest('usuario')">
+              <button type="button" class="btn btn-primary" title="borrar nombre" onclick="clearName()" ><i class="fas fa-times"></i></button>
+              </div>
+             
+              <input type="hidden" name="usuario" id="usuario" value="">
+            </div>
+            <!--Busqueda por tipo con select-->
+            <div class="float-right col-md-4">
+             <?=crear_select("id", "nombre", "rol",false,0,"Buscar por rol:",true);?>
+            </div>
+            
+            
+          </div>
+          <!--Boton para quitar filtros de busqueda-->
+          <div class="mx-auto text-center">
+            <button id="buscar" class="btn btn-primary">Ver Todo</button>
+          </div>          
+          
+          <br/>
+          
+          <div id="resultados_consulta" class="miTabla table-wrapper-scroll-y my-custom-scrollbar mx-auto text-center">
+           <?= consultar_u(); ?>
+          </div>
+        <!-- Fluid Container ends -->
+        </div>
+
+          
+         
